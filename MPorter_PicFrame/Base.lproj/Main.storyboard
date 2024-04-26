@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MPorter_PicFrame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zi9-91-tmz">
+                                <rect key="frame" x="46.666666666666657" y="211" width="300" height="430"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpiderGang.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="8hG-cE-iOR">
+                                        <rect key="frame" x="30" y="30" width="240" height="370"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8hG-cE-iOR" secondAttribute="bottom" constant="30" id="0on-Et-aO9"/>
+                                    <constraint firstItem="8hG-cE-iOR" firstAttribute="leading" secondItem="Zi9-91-tmz" secondAttribute="leading" constant="30" id="152-2h-v5S"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="1zb-co-AR4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="430" id="BSb-tM-jnj"/>
+                                    <constraint firstItem="8hG-cE-iOR" firstAttribute="top" secondItem="Zi9-91-tmz" secondAttribute="top" constant="30" id="DRB-lO-Khh"/>
+                                    <constraint firstAttribute="width" constant="300" id="LOs-gK-xoP"/>
+                                    <constraint firstAttribute="height" constant="430" id="Wjk-YG-bJl"/>
+                                    <constraint firstAttribute="trailing" secondItem="8hG-cE-iOR" secondAttribute="trailing" constant="30" id="ogl-Mi-Doy"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWp-en-TKQ">
+                                <rect key="frame" x="108.66666666666669" y="661" width="176" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="6KA-D9-lmZ"/>
+                                    <constraint firstAttribute="width" constant="176" id="8u0-zQ-RsW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Me, I Dare You"/>
+                                <connections>
+                                    <action selector="DaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KlT-5R-atr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zi9-91-tmz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3rJ-C9-TqH"/>
+                            <constraint firstItem="YWp-en-TKQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z9E-Je-O0f"/>
+                            <constraint firstItem="YWp-en-TKQ" firstAttribute="top" secondItem="Zi9-91-tmz" secondAttribute="bottom" constant="20" id="mk9-Rf-x1T"/>
+                            <constraint firstItem="Zi9-91-tmz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pXO-Sn-PwB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ImageAlpha" destination="8hG-cE-iOR" id="h0h-v7-oPG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SpiderGang.jpeg" width="486" height="750"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
